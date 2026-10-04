@@ -1,0 +1,90 @@
+name: Bug 报告 / Bug Report
+description: 提交游戏问题或崩溃 / Report a bug or crash
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈!提交前请确认问题只与本模组有关(可以先移除其他模组单独测试)。
+        Thanks for reporting! Please make sure the issue is caused by this mod (try testing without other mods first).
+
+  - type: input
+    id: mc-version
+    attributes:
+      label: Minecraft 版本 / Minecraft Version
+      placeholder: "例如 / e.g. 1.20.1"
+    validations:
+      required: true
+
+  - type: input
+    id: forge-version
+    attributes:
+      label: Forge 版本 / Forge Version
+      placeholder: "例如 / e.g. 47.4.20"
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: 模组版本 / Mod Version
+      placeholder: "例如 / e.g. 1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 环境 / Environment
+      options:
+        - 单人游戏 / Singleplayer
+        - 服务器 / Server
+        - 局域网 / LAN
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述 / Describe the bug
+      description: 发生了什么?/ What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为 / Expected behavior
+      description: 你本来期望发生什么?/ What did you expect to happen?
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 崩溃报告与日志 / Crash report & logs
+      description: |
+        崩溃时请粘贴 crash-reports 文件夹里最新文件的完整内容,或粘贴 Gist / pastebin 链接。
+        If the game crashed, paste the full content of the latest file in the crash-reports folder, or a Gist / pastebin link.
+      render: shell
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图 / Screenshots
+      description: 可选,把图片直接拖进来即可。/ Optional, drag & drop images here.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 其他补充 / Additional info
+      description: 其他模组列表、复现概率、你的猜测……什么都可以。/ Mod list, how often it happens, guesses — anything helps.
