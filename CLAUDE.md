@@ -102,14 +102,15 @@ Public static API for other mods to programmatically trigger teleports, query hi
 
 ### Key bindings
 
+Only three keys are actually registered in `ExampleMod.onRegisterKeyMappings` — `KeyBindings` also defines `OPEN_PERSONAL_POINTS` (P) and `OPEN_PUBLIC_POINTS` (L) but they are NOT registered, so they do nothing. The personal/public points screens are reached via the in-screen nav buttons instead.
+
 | Key | Action |
 |---|---|
-| `P` | Open personal teleport points |
-| `L` | Open public teleport points |
 | `=` | Open player list |
 | `-` | Quick-add current position as personal point |
+| `↓` | Teleport to the marked quick point |
 
-Registered in `ExampleMod.onRegisterKeyMappings`, handled in `ExampleMod.onKeyInput`.
+Handled in `ExampleMod.onKeyInput`.
 
 ## Important conventions
 

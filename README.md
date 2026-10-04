@@ -33,10 +33,11 @@ A player teleportation mod for Minecraft Forge 1.20.1: one-click teleport to pla
 | 按键 Key | 功能 Function |
 |---|---|
 | `=` | 打开玩家列表 / Open player list |
-| `P` | 私人传送点 / Personal teleport points |
-| `L` | 公共传送点 / Public teleport points |
 | `-` | 快速添加当前位置为传送点 / Quick-add current position |
 | `↓` | 传送到标记的快捷传送点 / Teleport to marked quick point |
+
+私人 / 公共传送点界面通过界面内的导航按钮打开。
+Personal and public points screens are opened via the in-screen nav buttons.
 
 按键均可在 设置 → 控制 → 按键绑定 中修改。
 All keys can be rebound in Settings → Controls → Key Binds.
@@ -60,12 +61,15 @@ The output JAR is at `build/libs/playertp-1.0.0.jar`. JDK 17 required.
 
 ## 🖼️ 截图 / Screenshots
 
-> 待补充 / Coming soon
+![玩家列表 / Player list](docs/screenshots/player_list.png)
+![私人传送点 / Personal points](docs/screenshots/personal_points.png)
+![公共传送点 / Public points](docs/screenshots/public_points.png)
+![图标选择 / Icon picker](docs/screenshots/icon_picker.png)
 
 ## 📥 下载 / Download
 
-- Modrinth: *(发布后回填 / to be added)*
-- CurseForge: *(发布后回填 / to be added)*
+- [Modrinth](https://modrinth.com/mod/playertp)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/playertp/preview)
 
 ## 📜 许可证 / License
 
