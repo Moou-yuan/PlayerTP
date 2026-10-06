@@ -69,7 +69,7 @@ The output JAR is at `build/libs/playertp-1.0.0.jar`. JDK 17 required.
 ## 📥 下载 / Download
 
 - [Modrinth](https://modrinth.com/mod/playertp)
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/playertp/preview)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/playertp)
 
 ## 📜 许可证 / License
 
